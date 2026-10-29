@@ -13,7 +13,7 @@ authors:
     affiliation: "Federal University of Uberlândia, Brazil"
 repository-code: "https://github.com/rafagcorrea/supplementary-material-BMSE-D-26-03645"
 # doi: "10.5281/zenodo.XXXXXXX"   # fill in after the Zenodo release
-license: CC-BY-4.0                # change if you choose another licence
+license: CC-BY-4.0                
 keywords:
   - hydrokinetic turbines
   - blade element momentum
