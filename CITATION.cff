@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Supplementary material for: Development and validation of HydroBEM: A Blade Element Momentum framework with local Reynolds number for hydrokinetic turbines"
+type: dataset
+version: "1.0"
+date-released: "2026-10-29"
+authors:
+  - family-names: "Gomide Corrêa"
+    given-names: "Rafaela"
+    affiliation: "Federal University of Uberlândia, Brazil"
+  - family-names: "de Souza"
+    given-names: "Francisco José"
+    affiliation: "Federal University of Uberlândia, Brazil"
+repository-code: "https://github.com/rafagcorrea/supplementary-material-BMSE-D-26-03645"
+# doi: "10.5281/zenodo.XXXXXXX"   # fill in after the Zenodo release
+license: CC-BY-4.0                # change if you choose another licence
+keywords:
+  - hydrokinetic turbines
+  - blade element momentum
+  - local Reynolds number
+  - lift and drag polars
+abstract: "Input data of the two validation cases of the HydroBEM manuscript: lift and drag polars (extrapolated to -180 to 180 degrees), blade chord and twist distributions, hydrofoil geometry, two-dimensional CFD data and experimental data used for validation."
