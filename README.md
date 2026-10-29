@@ -2,7 +2,7 @@
 
 Supplementary material for the manuscript **"Development and validation of HydroBEM: A Blade Element Momentum framework with local Reynolds number for hydrokinetic turbines"** (Rafaela Gomide Corrêa and Francisco José de Souza, Federal University of Uberlândia), submitted to the *Journal of the Brazilian Society of Mechanical Sciences and Engineering* (manuscript ID BMSE-D-26-03645).
 
-DOI: https://doi.org/[ZENODO-DOI]  <!-- fill in after the Zenodo release -->
+DOI: https://10.5281/zenodo.23772013
 
 This repository contains the **input data** of the two validation cases of the manuscript: the two-dimensional lift and drag polars, the blade chord and twist distributions, the hydrofoil geometry, the two-dimensional CFD data and the experimental data used for comparison. Together with the algorithm and numerical settings described in Section 2.2 of the manuscript, these data are what is needed to set up the calculations of the paper.
 
