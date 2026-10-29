@@ -12,7 +12,7 @@ authors:
     given-names: "Francisco José"
     affiliation: "Federal University of Uberlândia, Brazil"
 repository-code: "https://github.com/rafagcorrea/supplementary-material-BMSE-D-26-03645"
-# doi: "10.5281/zenodo.XXXXXXX"   # fill in after the Zenodo release
+doi: "10.5281/zenodo.23772013"   
 license: CC-BY-4.0                
 keywords:
   - hydrokinetic turbines
