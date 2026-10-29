@@ -70,6 +70,7 @@ Please cite the manuscript and this dataset (see `CITATION.cff`).
 
 ## Contact
 
-Rafaela Gomide Corrêa — rafaelagomide@ufu.br
+Rafaela Gomide Corrêa — rafaela_correa@ufg.br
+Thermal and Fluid Engineering Laboratory, Federal University of Goiás, Brazil
 Francisco José de Souza (corresponding author) — francisco.souza@ufu.br
 Fluid Mechanics Laboratory, Federal University of Uberlândia, Brazil.
