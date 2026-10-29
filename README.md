@@ -38,24 +38,22 @@ All angles are in degrees. Lengths are in metres.
 | `Case1/Re_288k.dat`, `Case2/Re_*.dat` | alpha [deg], Cl, Cd, Cm | QBlade/AeroDyn-style table, no column header (the 288k file has a 2-line header). |
 | `2D Hydrofoil Profile CFD Data/Tu*.txt` | AoA [deg], Cl, Cd | First line gives Re and the inflow turbulence intensity (Tu); 0 to 15 deg. |
 | `Experimental/*/Low_Turbulence_Cases/integrated.txt` and `Elevated_Turbulence_Cases/integrated.txt` | case no., TSR, Err(TSR), C_T, Err(C_T), C_P, Err(C_P) | Rotor-integrated thrust and power coefficients with uncertainties. |
-| `Experimental/*/*/BM_*R.txt` | case no., TSR, Err(TSR), C_BM(fw), Err, C_BM(ew), Err | Blade bending-moment coefficients (flapwise, fw, and edgewise, ew) at the radial station given in the file name [CONFIRM definition]. |
+| `Experimental/*/*/BM_*R.txt` | case no., TSR, Err(TSR), C_BM(fw), Err, C_BM(ew), Err | Blade bending-moment coefficients (flapwise, fw, and edgewise, ew) at the radial station given in the file name. |
 | `Thickened hydrofoil profile.txt` | x, y | Chord-normalised coordinates, trailing-edge thickness 0.00625 chord. |
 
 The polar tables are the final tables supplied to the solver, already extrapolated to −180°…180° (Montgomerie method in QBlade). The XFOIL range was −5° to 15° in both cases.
 
 ## Data provenance
 
-**Case 1 — Tucker Harvey et al. (2023)**: three-bladed, 1.6 m diameter rotor with a thickened NACA 63-415 hydrofoil, tested under low and elevated inflow turbulence. Experimental data and 2D CFD polars (SST k-ω) come from the benchmark. Polars `Re_90k.dat` ... `Re_700k.dat`: XFOIL with transition parameter N = 9 [CONFIRM], extrapolated in QBlade [CONFIRM version]. `Re_288k.dat`: the 2D CFD polar of the benchmark at Re = 288,888 and Tu = 0.01 % (`Tu00.txt`), imported and extrapolated in QBlade CE 2.0.6.3 beta [CONFIRM].
+**Case 1 — Tucker Harvey et al. (2023)**: three-bladed, 1.6 m diameter rotor with a thickened NACA 63-415 hydrofoil, tested under low and elevated inflow turbulence. Experimental data and 2D CFD polars (SST k-ω) come from the benchmark. Polars `Re_90k.dat` ... `Re_700k.dat`: XFOIL with transition parameter N = 9, extrapolated in QBlade CE v2.0.4. 
 
-**Case 2 — Stelzenmuller (2013)**: two-bladed 1:45 scale model of the DOE Reference Model 1 (rotor diameter 0.444 m, hub diameter 0.062 m, NACA 4415 hydrofoil), tested in a recirculating water channel. Polars: XFOIL with N = 9 [CONFIRM], extrapolated in QBlade [CONFIRM version]. NACA 4415 coordinates: [ADD FILE or state the definition used].
+**Case 2 — Stelzenmuller (2013)**: two-bladed 1:45 scale model of the DOE Reference Model 1 (rotor diameter 0.444 m, hub diameter 0.062 m, NACA 4415 hydrofoil), tested in a recirculating water channel. Polars: XFOIL with N = 9, extrapolated in QBlade CE v2.0.4..
 
-**Representative Reynolds number**: `Re_288k.dat` (case 1) and `Re_75k.dat` (case 2) are the polars used with the representative Reynolds number approach. The local Reynolds number approach interpolates between the polars listed above, as described in Section 2.2 of the manuscript. [CONFIRM which polars enter the local-Re database for case 2 — is 75k included?]
-
-**Experimental data folders**: `original` holds the data as provided with the benchmark [CONFIRM]; `interped` holds the same data linearly interpolated [CONFIRM] to the tip speed ratios simulated in the paper.
+**Representative Reynolds number**: `Re_288k.dat` (case 1) and `Re_75k.dat` (case 2) are the polars used with the representative Reynolds number approach. The local Reynolds number approach interpolates between the polars listed above, as described in Section 2.2 of the manuscript.
 
 ## How the data are used
 
-For each blade element the solver reads the local chord and twist (linear interpolation along r/R), computes the local Reynolds number, interpolates linearly between the two polars that bracket it at each tabulated angle of attack, and then interpolates linearly in angle of attack. The full algorithm, the numerical settings (tolerances, under-relaxation, iteration limit, root-finding intervals) and the flowcharts are given in the manuscript (Section 2.2, Figs. 1–2).
+For each blade element the solver reads the local chord and twist (linear interpolation along r/R), computes the local Reynolds number, interpolates linearly between the two polars that bracket it at each tabulated angle of attack, and then interpolates linearly in angle of attack. The equations, the numerical settings (tolerances, under-relaxation, iteration limit, root-finding intervals) and the flowcharts are given in the manuscript (Section 2.2, Figs. 1–2).
 
 ## References
 
@@ -64,7 +62,7 @@ For each blade element the solver reads the local chord and twist (linear interp
 
 ## License
 
-[CHOOSE, e.g. CC BY 4.0.] The experimental data and 2D CFD data of case 1 originate from Tucker Harvey et al. (2023) and the case 2 data from Stelzenmuller (2013); they are redistributed here for reproducibility of the manuscript, and the original sources must be cited when they are reused [CONFIRM permission/licence of the original sources].
+ The experimental data and 2D CFD data of case 1 originate from Tucker Harvey et al. (2023) and the case 2 data from Stelzenmuller (2013); they are redistributed here for reproducibility of the manuscript, and the original sources must be cited when they are reused 
 
 ## How to cite
 
