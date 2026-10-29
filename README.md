@@ -62,7 +62,7 @@ For each blade element the solver reads the local chord and twist (linear interp
 
 ## License
 
- The experimental data and 2D CFD data of case 1 originate from Tucker Harvey et al. (2023) and the case 2 data from Stelzenmuller (2013); they are redistributed here for reproducibility of the manuscript, and the original sources must be cited when they are reused 
+ license: CC-BY-4.0 The experimental data and 2D CFD data of case 1 originate from Tucker Harvey et al. (2023) and the case 2 data from Stelzenmuller (2013); they are redistributed here for reproducibility of the manuscript, and the original sources must be cited when they are reused 
 
 ## How to cite
 
